@@ -7,10 +7,10 @@ class Node:
     # Initialise the node object
     def __init__(self, data):
         self.data = data  # Assign data
-        self.next = None  # Initialize next as NULL
+        self.next = None  # Initialize next as None
  
  
-# Linked List class contains a Node object
+# SinglyLinkedList class
 class SinglyLinkedList:
  
     # Initialize head
@@ -25,8 +25,12 @@ def printLinkedList(ll):
         temp = temp.next # Go to next element in LinkedList
 
 
+a = []
+p = int(input("\nNo. of elements: "))
+for i in range(p):
+    a.append(int(input(f"Enter element{i}: ")))
+
 ll = SinglyLinkedList()
-a = list(input("Enter data : ").strip().split())
 
 # Initialize Head
 if len(a)!=0:
@@ -42,3 +46,22 @@ for val in a[1:]:
 
 # Print elements of LinkedList
 printLinkedList(ll)
+
+
+'''
+
+Example Output:
+
+No. of elements: 5
+Enter element0: 1
+Enter element1: 22
+Enter element2: 30
+Enter element3: 2
+Enter element4: 5
+1
+22
+30
+2
+5
+
+'''

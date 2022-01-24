@@ -29,3 +29,15 @@ rev_P = reverseArray(P) # User-defined function to revserse array
 
 print("Reversed Array: ", rev_P)
 
+'''
+
+Example Output:
+
+Enter number of elements : 5
+Enter the numbers : 1 3 5 7 9
+
+Original Array:  array('i', [1, 3, 5, 7, 9])
+Reversed Array:  array('i', [9, 7, 5, 3, 1])
+
+'''
+
